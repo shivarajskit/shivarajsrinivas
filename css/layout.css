@@ -338,17 +338,17 @@ ul#nav li.current a { color: #F06000; }
    border-radius: 3px 0 0 3px;
 }
 
-.android {
-  	width: 80%;
+.css {
+  	width: 85%;
   	-moz-animation: linuxunix 2s ease;
   	-webkit-animation: linuxunix 2s ease;
 }
-.java {
-  	width: 85%;
+.resp {
+  	width: 75%;
   	-moz-animation: aws 2s ease;
   	-webkit-animation: aws 2s ease;
 }
-.rx {
+.angular {
     width: 80%;
     -moz-animation: aws 2s ease;
     -webkit-animation: aws 2s ease;
@@ -358,18 +358,18 @@ ul#nav li.current a { color: #F06000; }
   	-moz-animation: chef 2s ease;
   	-webkit-animation: chef 2s ease;
 }
-.c {
+.react {
     width: 75%;
     -moz-animation: ansible 2s ease;
     -webkit-animation: ansible 2s ease;
 }
-.cpp {
+.express {
   	width: 70%;
   	-moz-animation: nosqldb 2s ease;
   	-webkit-animation: nosqldb 2s ease;
 }
 .javascript {
-  	width: 70%;
+  	width: 80%;
   	-moz-animation: shellscript 2s ease;
   	-webkit-animation: shellscript 2s ease;
 }
@@ -378,16 +378,10 @@ ul#nav li.current a { color: #F06000; }
   	-moz-animation: python 2s ease;
   	-webkit-animation: python 2s ease;
 }
-.ruby {
+.nodejs {
     width: 60%;
     -moz-animation: apachetomcat 2s ease;
     -webkit-animation: apachetomcat 2s ease;
-}
-
-.sqlite {
-    width: 85%;
-    -moz-animation: networking 2s ease;
-    -webkit-animation: networking 2s ease;
 }
 
 .mysql {
@@ -403,7 +397,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .html {
-    width: 60%;
+    width: 85%;
     -moz-animation: logmgmt 2s ease;
     -webkit-animation: logmgmt 2s ease;
 }
