@@ -64,7 +64,7 @@ header .scroll-watcher {
    scale: 0 1;
    transform-origin: left;
    animation: scroll-watcher linear;
-   animation-timeline: scroll();
+   animation-timeline: scroll(y);
 }
 
 header .banner {
