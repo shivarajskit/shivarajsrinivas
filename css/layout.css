@@ -76,17 +76,21 @@ header .banner {
    text-align: center;
 }
 
-/* @keyframes fade-out {
+@keyframes fade-out {
    to {
       opacity: 0;
    }
-} */
+}
 
+@supports (animation-timeline: view()) {
+   header .banner-text { 
+      animation: fade-out linear;
+      animation-timeline: view();
+      animation-range: exit -200px;
+   }
+}
 header .banner-text { 
    width: 100%;
-   /* animation: fade-out linear;
-   animation-timeline: view();
-   animation-range: exit -200px; */
 }
 header .banner-text h1 {
    font: 90px/1.1em 'opensans-bold', sans-serif;
