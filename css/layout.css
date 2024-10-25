@@ -76,7 +76,7 @@ header .banner {
    text-align: center;
 }
 
-@keyframes fade-out {
+/* @keyframes fade-out {
    to {
       opacity: 0;
    }
@@ -88,7 +88,7 @@ header .banner {
       animation-timeline: view();
       animation-range: exit -200px;
    }
-}
+} */
 header .banner-text { 
    width: 100%;
 }
