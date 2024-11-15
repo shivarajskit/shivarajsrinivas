@@ -419,12 +419,6 @@ ul#nav li.current a { color: #F06000; }
     -webkit-animation: apachetomcat 2s ease;
 }
 
-.mysql {
-    width: 60%;
-    -moz-animation: dns 2s ease;
-    -webkit-animation: dns 2s ease;
-}
-
 .firebase {
     width: 70%;
     -moz-animation: monitroing 2s ease;
