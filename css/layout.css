@@ -437,7 +437,7 @@ ul#nav li.current a { color: #F06000; }
     -webkit-animation: logmgmt 2s ease;
 }
 
-.tcpip {
+.tailwindcss {
     width: 70%;
     -moz-animation: logmgmt 2s ease;
     -webkit-animation: logmgmt 2s ease;
