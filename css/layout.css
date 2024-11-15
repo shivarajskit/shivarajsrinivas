@@ -438,7 +438,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .tailwindcss {
-    width: 70%;
+    width: 80%;
     -moz-animation: logmgmt 2s ease;
     -webkit-animation: logmgmt 2s ease;
 }
