@@ -373,69 +373,125 @@ ul#nav li.current a { color: #F06000; }
    border-radius: 3px 0 0 3px;
 }
 
+/* ===========================
+   Skill Bar Animations
+   =========================== */
+
+@keyframes growBar {
+  from { width: 0; }
+  to { width: var(--target-width); }
+}
+
+/* Optional distinct animation sets if you want subtle variations */
+@keyframes redux {
+  from { width: 0; }
+  to { width: 75%; }
+}
+@keyframes test {
+  from { width: 0; }
+  to { width: 70%; }
+}
+@keyframes cicd {
+  from { width: 0; }
+  to { width: 70%; }
+}
+@keyframes devops {
+  from { width: 0; }
+  to { width: 65%; }
+}
+@keyframes gitops {
+  from { width: 0; }
+  to { width: 85%; }
+}
+
+/* ===========================
+   Existing Skill Bars
+   =========================== */
 .css {
-  	width: 85%;
-  	-moz-animation: linuxunix 2s ease;
-  	-webkit-animation: linuxunix 2s ease;
+    width: 85%;
+    animation: growBar 2s ease forwards;
+    --target-width: 85%;
 }
 .resp {
-  	width: 75%;
-  	-moz-animation: aws 2s ease;
-  	-webkit-animation: aws 2s ease;
+    width: 75%;
+    animation: growBar 2s ease forwards;
+    --target-width: 75%;
 }
 .angular {
-    width: 80%;
-    -moz-animation: aws 2s ease;
-    -webkit-animation: aws 2s ease;
-}
-.git {
-  	width: 85%;
-  	-moz-animation: chef 2s ease;
-  	-webkit-animation: chef 2s ease;
+    width: 85%;
+    animation: growBar 2s ease forwards;
+    --target-width: 85%;
 }
 .react {
-    width: 75%;
-    -moz-animation: ansible 2s ease;
-    -webkit-animation: ansible 2s ease;
-}
-.express {
-  	width: 70%;
-  	-moz-animation: nosqldb 2s ease;
-  	-webkit-animation: nosqldb 2s ease;
+    width: 80%;
+    animation: growBar 2s ease forwards;
+    --target-width: 80%;
 }
 .javascript {
-  	width: 80%;
-  	-moz-animation: shellscript 2s ease;
-  	-webkit-animation: shellscript 2s ease;
-}
-.nosql {
-  	width: 60%;
-  	-moz-animation: python 2s ease;
-  	-webkit-animation: python 2s ease;
-}
-.nodejs {
-    width: 60%;
-    -moz-animation: apachetomcat 2s ease;
-    -webkit-animation: apachetomcat 2s ease;
-}
-
-.firebase {
-    width: 70%;
-    -moz-animation: monitroing 2s ease;
-    -webkit-animation: monitroing 2s ease;
-}
-
-.html {
     width: 85%;
-    -moz-animation: logmgmt 2s ease;
-    -webkit-animation: logmgmt 2s ease;
+    animation: growBar 2s ease forwards;
+    --target-width: 85%;
 }
-
+.html {
+    width: 90%;
+    animation: growBar 2s ease forwards;
+    --target-width: 90%;
+}
 .tailwindcss {
     width: 80%;
-    -moz-animation: logmgmt 2s ease;
-    -webkit-animation: logmgmt 2s ease;
+    animation: growBar 2s ease forwards;
+    --target-width: 80%;
 }
+.git {
+    width: 85%;
+    animation: growBar 2s ease forwards;
+    --target-width: 85%;
+}
+.express {
+    width: 70%;
+    animation: growBar 2s ease forwards;
+    --target-width: 70%;
+}
+.nodejs {
+    width: 65%;
+    animation: growBar 2s ease forwards;
+    --target-width: 65%;
+}
+.nosql {
+    width: 60%;
+    animation: growBar 2s ease forwards;
+    --target-width: 60%;
+}
+.firebase {
+    width: 70%;
+    animation: growBar 2s ease forwards;
+    --target-width: 70%;
+}
+
+/* ===========================
+   New Skill Bars (Modern Additions)
+   =========================== */
+.state { /* NgRx / Redux Toolkit */
+    width: 75%;
+    animation: redux 2s ease forwards;
+}
+.testing { /* Jasmine, Karma, Jest, Playwright */
+    width: 70%;
+    animation: test 2s ease forwards;
+}
+.ci { /* CI/CD: Jenkins, GitHub Actions, Azure DevOps */
+    width: 70%;
+    animation: cicd 2s ease forwards;
+}
+.devops { /* Docker, AWS, ECS/EKS */
+    width: 65%;
+    animation: devops 2s ease forwards;
+}
+.version { /* Version Control / Git mastery */
+    width: 85%;
+    animation: gitops 2s ease forwards;
+}
+
 
 @-moz-keyframes photoshop {
   0%   { width: 0px;  }
